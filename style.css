@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  background-color: #121212;
+  color: #f0f0f0;
   padding: 20px;
   text-align: center;
 }
@@ -15,6 +16,10 @@ input {
   width: 60%;
   margin-top: 10px;
   font-size: 16px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #f0f0f0;
+  border-radius: 5px;
 }
 
 button {
@@ -22,25 +27,46 @@ button {
   margin-left: 10px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #03dac5;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00bfa5;
 }
 
 .profile-card {
   margin-top: 20px;
   padding: 20px;
-  background: white;
+  background: #1e1e1e;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(3, 218, 197, 0.2);
 }
 
 .profile-card img {
   border-radius: 50%;
   width: 100px;
+  border: 2px solid #03dac5;
 }
 
 .profile-card h2 {
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .profile-card p {
-  color: #555;
+  color: #bbbbbb;
+}
+
+a {
+  color: #03dac5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
