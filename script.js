@@ -10,9 +10,9 @@ function getGithubProfile(){
     fetch(`https://api.github.com/users/${username}`)
         .then(response => {
             if(!response.ok){
-                throw new error('User not found');
+                throw new Error('User not found');
             }
-            return response.json;
+            return response.json();
         })
         .then(data => {
             const profileHTML = `
